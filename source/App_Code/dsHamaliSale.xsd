@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsHamaliSale" targetNamespace="http://tempuri.org/dsHamaliSale.xsd" xmlns:mstns="http://tempuri.org/dsHamaliSale.xsd" xmlns="http://tempuri.org/dsHamaliSale.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="qryHamaliSaleTableAdapter" GeneratorDataComponentClassName="qryHamaliSaleTableAdapter" Name="qryHamaliSale" UserDataComponentName="qryHamaliSaleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Web.config)" DbObjectName="HT.dbo.qryHamaliSale" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Cash_Credit, Doc_No, Doc_Date, Ac_Name_E, Company_Code, Year_Code, Ten, Thirty, Fifty, Hamali, NakaDelivery
+FROM            qryHamaliSale</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Cash_Credit" DataSetColumn="Cash_Credit" />
+              <Mapping SourceColumn="Doc_No" DataSetColumn="Doc_No" />
+              <Mapping SourceColumn="Doc_Date" DataSetColumn="Doc_Date" />
+              <Mapping SourceColumn="Ac_Name_E" DataSetColumn="Ac_Name_E" />
+              <Mapping SourceColumn="Company_Code" DataSetColumn="Company_Code" />
+              <Mapping SourceColumn="Year_Code" DataSetColumn="Year_Code" />
+              <Mapping SourceColumn="Ten" DataSetColumn="Ten" />
+              <Mapping SourceColumn="Thirty" DataSetColumn="Thirty" />
+              <Mapping SourceColumn="Fifty" DataSetColumn="Fifty" />
+              <Mapping SourceColumn="Hamali" DataSetColumn="Hamali" />
+              <Mapping SourceColumn="NakaDelivery" DataSetColumn="NakaDelivery" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsHamaliSale" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsHamaliSale" msprop:Generator_UserDSName="dsHamaliSale">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="qryHamaliSale" msprop:Generator_TableClassName="qryHamaliSaleDataTable" msprop:Generator_TableVarName="tableqryHamaliSale" msprop:Generator_RowChangedName="qryHamaliSaleRowChanged" msprop:Generator_TablePropName="qryHamaliSale" msprop:Generator_RowDeletingName="qryHamaliSaleRowDeleting" msprop:Generator_RowChangingName="qryHamaliSaleRowChanging" msprop:Generator_RowEvHandlerName="qryHamaliSaleRowChangeEventHandler" msprop:Generator_RowDeletedName="qryHamaliSaleRowDeleted" msprop:Generator_RowClassName="qryHamaliSaleRow" msprop:Generator_UserTableName="qryHamaliSale" msprop:Generator_RowEvArgName="qryHamaliSaleRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cash_Credit" msprop:Generator_ColumnVarNameInTable="columnCash_Credit" msprop:Generator_ColumnPropNameInRow="Cash_Credit" msprop:Generator_ColumnPropNameInTable="Cash_CreditColumn" msprop:Generator_UserColumnName="Cash_Credit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Doc_No" msprop:Generator_ColumnVarNameInTable="columnDoc_No" msprop:Generator_ColumnPropNameInRow="Doc_No" msprop:Generator_ColumnPropNameInTable="Doc_NoColumn" msprop:Generator_UserColumnName="Doc_No" type="xs:int" minOccurs="0" />
+              <xs:element name="Doc_Date" msprop:Generator_ColumnVarNameInTable="columnDoc_Date" msprop:Generator_ColumnPropNameInRow="Doc_Date" msprop:Generator_ColumnPropNameInTable="Doc_DateColumn" msprop:Generator_UserColumnName="Doc_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Ac_Name_E" msprop:Generator_ColumnVarNameInTable="columnAc_Name_E" msprop:Generator_ColumnPropNameInRow="Ac_Name_E" msprop:Generator_ColumnPropNameInTable="Ac_Name_EColumn" msprop:Generator_UserColumnName="Ac_Name_E" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Company_Code" msprop:Generator_ColumnVarNameInTable="columnCompany_Code" msprop:Generator_ColumnPropNameInRow="Company_Code" msprop:Generator_ColumnPropNameInTable="Company_CodeColumn" msprop:Generator_UserColumnName="Company_Code" type="xs:int" minOccurs="0" />
+              <xs:element name="Year_Code" msprop:Generator_ColumnVarNameInTable="columnYear_Code" msprop:Generator_ColumnPropNameInRow="Year_Code" msprop:Generator_ColumnPropNameInTable="Year_CodeColumn" msprop:Generator_UserColumnName="Year_Code" type="xs:int" minOccurs="0" />
+              <xs:element name="Ten" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTen" msprop:Generator_ColumnPropNameInRow="Ten" msprop:Generator_ColumnPropNameInTable="TenColumn" msprop:Generator_UserColumnName="Ten" type="xs:int" minOccurs="0" />
+              <xs:element name="Thirty" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnThirty" msprop:Generator_ColumnPropNameInRow="Thirty" msprop:Generator_ColumnPropNameInTable="ThirtyColumn" msprop:Generator_UserColumnName="Thirty" type="xs:int" minOccurs="0" />
+              <xs:element name="Fifty" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFifty" msprop:Generator_ColumnPropNameInRow="Fifty" msprop:Generator_ColumnPropNameInTable="FiftyColumn" msprop:Generator_UserColumnName="Fifty" type="xs:int" minOccurs="0" />
+              <xs:element name="Hamali" msprop:Generator_ColumnVarNameInTable="columnHamali" msprop:Generator_ColumnPropNameInRow="Hamali" msprop:Generator_ColumnPropNameInTable="HamaliColumn" msprop:Generator_UserColumnName="Hamali" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NakaDelivery" msprop:Generator_ColumnVarNameInTable="columnNakaDelivery" msprop:Generator_ColumnPropNameInRow="NakaDelivery" msprop:Generator_ColumnPropNameInTable="NakaDeliveryColumn" msprop:Generator_UserColumnName="NakaDelivery" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

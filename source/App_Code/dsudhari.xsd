@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsudhari" targetNamespace="http://tempuri.org/dsudhari.xsd" xmlns:mstns="http://tempuri.org/dsudhari.xsd" xmlns="http://tempuri.org/dsudhari.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="sqlconnection" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="sqlconnection (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.sqlconnection.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="qryGledgernewTableAdapter" GeneratorDataComponentClassName="qryGledgernewTableAdapter" Name="qryGledgernew" UserDataComponentName="qryGledgernewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="sqlconnection (Web.config)" DbObjectName="sugarianshrikant.dbo.qryGledgernew" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT    DOC_NO, DOC_DATE, AC_CODE, NARRATION, AMOUNT, COMPANY_CODE, YEAR_CODE, Ac_Name_E, Group_Code, BSGroupName, balance, cityname, ClosingBlance, docDatecon
+FROM         qryGledgernew</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DOC_NO" DataSetColumn="DOC_NO" />
+              <Mapping SourceColumn="DOC_DATE" DataSetColumn="DOC_DATE" />
+              <Mapping SourceColumn="AC_CODE" DataSetColumn="AC_CODE" />
+              <Mapping SourceColumn="NARRATION" DataSetColumn="NARRATION" />
+              <Mapping SourceColumn="AMOUNT" DataSetColumn="AMOUNT" />
+              <Mapping SourceColumn="COMPANY_CODE" DataSetColumn="COMPANY_CODE" />
+              <Mapping SourceColumn="YEAR_CODE" DataSetColumn="YEAR_CODE" />
+              <Mapping SourceColumn="Ac_Name_E" DataSetColumn="Ac_Name_E" />
+              <Mapping SourceColumn="Group_Code" DataSetColumn="Group_Code" />
+              <Mapping SourceColumn="BSGroupName" DataSetColumn="BSGroupName" />
+              <Mapping SourceColumn="cityname" DataSetColumn="cityname" />
+              <Mapping SourceColumn="balance" DataSetColumn="balance" />
+              <Mapping SourceColumn="ClosingBlance" DataSetColumn="ClosingBlance" />
+              <Mapping SourceColumn="docDatecon" DataSetColumn="docDatecon" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsudhari" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsudhari" msprop:Generator_UserDSName="dsudhari">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="qryGledgernew" msprop:Generator_TableClassName="qryGledgernewDataTable" msprop:Generator_TableVarName="tableqryGledgernew" msprop:Generator_TablePropName="qryGledgernew" msprop:Generator_RowDeletingName="qryGledgernewRowDeleting" msprop:Generator_RowChangingName="qryGledgernewRowChanging" msprop:Generator_RowEvHandlerName="qryGledgernewRowChangeEventHandler" msprop:Generator_RowDeletedName="qryGledgernewRowDeleted" msprop:Generator_UserTableName="qryGledgernew" msprop:Generator_RowChangedName="qryGledgernewRowChanged" msprop:Generator_RowEvArgName="qryGledgernewRowChangeEvent" msprop:Generator_RowClassName="qryGledgernewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DOC_NO" msprop:Generator_ColumnVarNameInTable="columnDOC_NO" msprop:Generator_ColumnPropNameInRow="DOC_NO" msprop:Generator_ColumnPropNameInTable="DOC_NOColumn" msprop:Generator_UserColumnName="DOC_NO" type="xs:int" />
+              <xs:element name="DOC_DATE" msprop:Generator_ColumnVarNameInTable="columnDOC_DATE" msprop:Generator_ColumnPropNameInRow="DOC_DATE" msprop:Generator_ColumnPropNameInTable="DOC_DATEColumn" msprop:Generator_UserColumnName="DOC_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AC_CODE" msprop:Generator_ColumnVarNameInTable="columnAC_CODE" msprop:Generator_ColumnPropNameInRow="AC_CODE" msprop:Generator_ColumnPropNameInTable="AC_CODEColumn" msprop:Generator_UserColumnName="AC_CODE" type="xs:int" minOccurs="0" />
+              <xs:element name="NARRATION" msprop:Generator_ColumnVarNameInTable="columnNARRATION" msprop:Generator_ColumnPropNameInRow="NARRATION" msprop:Generator_ColumnPropNameInTable="NARRATIONColumn" msprop:Generator_UserColumnName="NARRATION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="555" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AMOUNT" msprop:Generator_ColumnVarNameInTable="columnAMOUNT" msprop:Generator_ColumnPropNameInRow="AMOUNT" msprop:Generator_ColumnPropNameInTable="AMOUNTColumn" msprop:Generator_UserColumnName="AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COMPANY_CODE" msprop:Generator_ColumnVarNameInTable="columnCOMPANY_CODE" msprop:Generator_ColumnPropNameInRow="COMPANY_CODE" msprop:Generator_ColumnPropNameInTable="COMPANY_CODEColumn" msprop:Generator_UserColumnName="COMPANY_CODE" type="xs:int" />
+              <xs:element name="YEAR_CODE" msprop:Generator_ColumnVarNameInTable="columnYEAR_CODE" msprop:Generator_ColumnPropNameInRow="YEAR_CODE" msprop:Generator_ColumnPropNameInTable="YEAR_CODEColumn" msprop:Generator_UserColumnName="YEAR_CODE" type="xs:int" />
+              <xs:element name="Ac_Name_E" msprop:Generator_ColumnVarNameInTable="columnAc_Name_E" msprop:Generator_ColumnPropNameInRow="Ac_Name_E" msprop:Generator_ColumnPropNameInTable="Ac_Name_EColumn" msprop:Generator_UserColumnName="Ac_Name_E" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Group_Code" msprop:Generator_ColumnVarNameInTable="columnGroup_Code" msprop:Generator_ColumnPropNameInRow="Group_Code" msprop:Generator_ColumnPropNameInTable="Group_CodeColumn" msprop:Generator_UserColumnName="Group_Code" type="xs:int" minOccurs="0" />
+              <xs:element name="BSGroupName" msprop:Generator_ColumnVarNameInTable="columnBSGroupName" msprop:Generator_ColumnPropNameInRow="BSGroupName" msprop:Generator_ColumnPropNameInTable="BSGroupNameColumn" msprop:Generator_UserColumnName="BSGroupName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cityname" msprop:Generator_ColumnVarNameInTable="columncityname" msprop:Generator_ColumnPropNameInRow="cityname" msprop:Generator_ColumnPropNameInTable="citynameColumn" msprop:Generator_UserColumnName="cityname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="balance" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnbalance" msprop:Generator_ColumnPropNameInRow="balance" msprop:Generator_ColumnPropNameInTable="balanceColumn" msprop:Generator_UserColumnName="balance" type="xs:int" minOccurs="0" />
+              <xs:element name="ClosingBlance" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnClosingBlance" msprop:Generator_ColumnPropNameInRow="ClosingBlance" msprop:Generator_ColumnPropNameInTable="ClosingBlanceColumn" msprop:Generator_UserColumnName="ClosingBlance" type="xs:int" minOccurs="0" />
+              <xs:element name="docDatecon" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columndocDatecon" msprop:Generator_ColumnPropNameInRow="docDatecon" msprop:Generator_ColumnPropNameInTable="docDateconColumn" msprop:Generator_UserColumnName="docDatecon" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
